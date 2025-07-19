@@ -1,7 +1,8 @@
 {
     "Navbar": {
-        "tracking": "tracciamento",
-        "home": "home"
+        "tracking": "traccia",
+        "home": "home",
+        "send": "spedisci"
     },
     "others": {
         "yes": "si",
@@ -19,6 +20,18 @@
         "address": "per favore inserisci l'indirizzo",
         "city": "inserisci la città",
         "zip": "inserisci il cap",
-        "country": "seleziona il paese"
+        "country": "seleziona il paese",
+        "select_package_size": "Seleziona le dimensioni del pacco"
+    },
+    "standard_sizes":{
+        "1kpkg": "Pacco: Peso massimo: 1Kg; Volume massimo: 10x40x10cm",
+        "3kpkg": "Pacco: Peso massimo: 3Kg; Volume massimo: 15x50x15cm",
+        "5kpkg": "Pacco: Peso massimo: 5Kg; Volume massimo: 20x40x20cm",
+        "10kpkg": "Pacco: Peso massimo: 10Kg; Volume massimo: 30x40x30cm",
+        "20kpkg": "Pacco: Peso massimo: 20Kg; Volume massimo: 35x50x35cm",
+        "30kpkg": "Pacco: Peso massimo: 30Kg; Volume massimo: 45x50x45cm",
+        "small": "Valigia: Peso massimo: 10Kg; Volume massimo: 40x55x20cm",
+        "medium": "Valigia: Peso massimo: 15Kg; Volume massimo: 45x65x25cm",
+        "large": "Valigia: Peso massimo: 25Kg; Volume massimo: 50x75x50cm"
     }
 }

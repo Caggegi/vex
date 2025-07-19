@@ -1,7 +1,10 @@
+"use client"
 import Image from "next/image";
 import styles from "./navbar.module.css";
-import { Avatar } from "@radix-ui/themes";
-import {useTranslations} from 'next-intl';
+import { Avatar, TabNav } from "@radix-ui/themes";
+import { useTranslations } from 'next-intl';
+import { usePathname } from "next/navigation";
+
 
 
 export default function Navbar() {
@@ -17,9 +20,13 @@ export default function Navbar() {
                 priority
             />
             <div className={styles.navbar_actions}>
-                <a href="/" className={styles.link} >{t('home')}</a>
-                <a href="/track" className={styles.link}>{t('tracking')}</a>
-                <Avatar fallback="RC" style={{margin:"0 8px"}}/>
+                <TabNav.Root>
+                    <TabNav.Link href="/" active={usePathname()==="/"} className={styles.link}>
+                        {t('send')}
+                    </TabNav.Link>
+                    <TabNav.Link href="/tracking" active={usePathname()==="/tracking/"}  className={styles.link}>{t('tracking')}</TabNav.Link>
+                </TabNav.Root>
+                <Avatar fallback="RC" style={{ margin: "0 8px" }} />
             </div>
         </div>
     )

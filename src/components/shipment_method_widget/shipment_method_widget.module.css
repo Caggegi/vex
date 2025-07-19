@@ -1,16 +1,30 @@
 .icon{
-  width: 36px;
-  height: 36px;
+  min-width: 72px;
+  min-height: 72px;
 }
 
 .line{
-    width: 100px;
+    width: 100%;
     height: 1px;
     background-color: white;
     margin: 8px;
 }
 
-.airplane{
+.shipping{
+    min-width: 300px;
+    min-height: 300px;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 940px)  {
+  .shipping{
+    rotate: 90deg;
+    min-width: 200px;
+    min-height: 300px;
+  }
+
+  .icon{
+    rotate: -90deg;
+  }
 }

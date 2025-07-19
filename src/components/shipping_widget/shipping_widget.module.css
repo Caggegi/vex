@@ -4,5 +4,16 @@
     margin: 32px;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
 
+.package_size_title{
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 940px) {
+  .main_box{
+    flex-direction: column;
+  }
+}

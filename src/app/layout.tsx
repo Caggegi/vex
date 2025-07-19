@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NextIntlClientProvider>
-          <Theme appearance="dark" accentColor="lime">
+          <Theme appearance="dark" accentColor="lime" hasBackground={true} className="backimage">
             <Navbar />
             {children}
           </Theme>
