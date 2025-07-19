@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 100" width="220" height="100">
+  <rect width="110" height="100" fill="#00000000"/>
+
+  <g fill="#ffffff" font-family="'Arial Black', 'Haettenschweiler', 'Franklin Gothic Bold', sans-serif" font-weight="900" font-size="60" letter-spacing="-3px">
+    <text x="10" y="70">VEX</text>
+  </g>
+
+  <text x="148" y="82" fill="#c4d600" font-family="'Arial', 'Helvetica', sans-serif" font-size="32" font-weight="bold">one</text>
+</svg>

@@ -1,0 +1,12 @@
+{
+    "Navbar": {
+        "tracking": "tracciamento",
+        "home": "home"
+    },
+    "others": {
+        "yes": "si",
+        "no": "no",
+        "save": "salva",
+        "cancel": "annulla"
+    }
+}

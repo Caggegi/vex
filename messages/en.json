@@ -1,0 +1,12 @@
+{
+    "Navbar": {
+        "tracking": "tracking",
+        "home": "home"
+    },
+    "others":{
+        "yes":"yes",
+        "no":"no",
+        "save":"save",
+        "cancel":"cancel"
+    }
+}

@@ -1,0 +1,19 @@
+.navbar_layout{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.navbar_actions{
+  display: flex;
+  align-items: center;
+}
+
+.link{
+    margin: 0 8px;
+    text-transform: capitalize;
+}
+
+.logo{
+  width: 100px;
+}
