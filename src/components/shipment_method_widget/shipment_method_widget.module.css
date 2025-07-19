@@ -1,0 +1,16 @@
+.icon{
+  width: 36px;
+  height: 36px;
+}
+
+.line{
+    width: 100px;
+    height: 1px;
+    background-color: white;
+    margin: 8px;
+}
+
+.airplane{
+    justify-content: center;
+    align-items: center;
+}

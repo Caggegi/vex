@@ -1,7 +1,14 @@
+import { faPlane } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Flex } from "@radix-ui/themes";
+import styles from "./shipment_method_widget.module.css";
+
 export default function ShipmentMethodWidget() {
     return (
-        <div>
-            <h1>Shipment Method</h1>
-        </div>
+        <Flex className={styles.airplane}>
+            <div className={styles.line}></div>
+            <FontAwesomeIcon icon={faPlane} className={styles.icon}/>
+            <div className={styles.line}></div>
+        </Flex>
     )
 }

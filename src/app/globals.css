@@ -3,6 +3,10 @@
   --foreground: #171717;
 }
 
+.capitalize{
+  text-transform: capitalize;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

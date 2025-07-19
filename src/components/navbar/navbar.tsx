@@ -17,9 +17,9 @@ export default function Navbar() {
                 priority
             />
             <div className={styles.navbar_actions}>
-                <a href="/" className={styles.link}>{t('home')}</a>
+                <a href="/" className={styles.link} >{t('home')}</a>
                 <a href="/track" className={styles.link}>{t('tracking')}</a>
-                <Avatar fallback="RC" />
+                <Avatar fallback="RC" style={{margin:"0 8px"}}/>
             </div>
         </div>
     )

@@ -7,6 +7,18 @@
         "yes":"yes",
         "no":"no",
         "save":"save",
-        "cancel":"cancel"
+        "cancel":"cancel",
+        "from":"from",
+        "to":"to",
+        "address": "address",
+        "city": "city",
+        "zip": "zip",
+        "country": "country"
+    },
+    "placeholders":{
+        "address": "please insert your address",
+        "city": "insert the city",
+        "zip": "insert the zip code",
+        "country": "select the country"
     }
 }
