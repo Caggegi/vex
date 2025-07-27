@@ -8,8 +8,25 @@
     flex-direction: row;
 }
 
+.shipping_widget{
+    background-color: white;
+}
+
 .package_size_title{
     margin-bottom: 8px;
+}
+
+.title{
+    text-align: center;
+    margin: 40px;
+    h1{
+        font-size: xx-large;
+        margin-bottom:12px;
+    }
+    p{
+        font-size: medium;
+        color: grey;
+    }
 }
 
 @media screen and (max-width: 940px) {

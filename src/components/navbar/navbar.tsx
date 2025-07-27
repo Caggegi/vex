@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className={styles.navbar_layout}>
             <Image
                 className={styles.logo}
-                src="/vexone.svg"
+                src="/vexone_black.svg"
                 alt="Next.js logo"
                 width={180}
                 height={38}

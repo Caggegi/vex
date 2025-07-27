@@ -21,7 +21,9 @@
         "city": "insert the city",
         "zip": "insert the zip code",
         "country": "select the country",
-        "select_package_size": "Select the package size"
+        "select_package_size": "Select the package size",
+        "shipping_widget_title": "Ship Anywhere, Anytime",
+        "shipping_widget_subtitle": "Fast, reliable shipping solutions for your business and personal needs"
     },
     "standard_sizes":{
         "1kpkg": "Box: Max weight: 1Kg; Max volume: 10x40x10cm",

@@ -9,8 +9,8 @@
         "no": "no",
         "save": "salva",
         "cancel": "annulla",
-        "from":"da",
-        "to":"a",
+        "from":"mittente",
+        "to":"destinatario",
         "address": "indirizzo",
         "city": "città",
         "zip": "cap",
@@ -21,7 +21,9 @@
         "city": "inserisci la città",
         "zip": "inserisci il cap",
         "country": "seleziona il paese",
-        "select_package_size": "Seleziona le dimensioni del pacco"
+        "select_package_size": "Seleziona le dimensioni del pacco",
+        "shipping_widget_title": "Spedisci ovunque, a qualsiasi ora",
+        "shipping_widget_subtitle": "Spedizioni veloci ed affidabili per il tuo business o uso personale"
     },
     "standard_sizes":{
         "1kpkg": "Pacco: Peso massimo: 1Kg; Volume massimo: 10x40x10cm",

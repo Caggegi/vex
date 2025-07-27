@@ -14,10 +14,10 @@ export default function AddressWidget(props: AddressProps) {
     const p = useTranslations('placeholders');
 
     return (
-        <Card className={styles.card}>
+        <Card className={styles.card} variant="ghost">
             <Flex className={styles.card_header}>
-                <span className={styles.title}>{props.title}</span>
                 <Icon path={props.icon} className={styles.icon} />
+                <span className={styles.title}>{props.title}</span>
             </Flex>
             <form>
                 <Flex direction="column">
