@@ -17,10 +17,10 @@
         "country": "country"
     },
     "placeholders":{
-        "address": "please insert your address",
-        "city": "insert the city",
-        "zip": "insert the zip code",
-        "country": "select the country",
+        "address": "123 Main St",
+        "city": "Anytown",
+        "zip": "12345",
+        "country": "United States",
         "select_package_size": "Select the package size",
         "shipping_widget_title": "Ship Anywhere, Anytime",
         "shipping_widget_subtitle": "Fast, reliable shipping solutions for your business and personal needs"

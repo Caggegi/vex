@@ -17,10 +17,10 @@
         "country": "paese"
     },
     "placeholders":{
-        "address": "per favore inserisci l'indirizzo",
-        "city": "inserisci la città",
-        "zip": "inserisci il cap",
-        "country": "seleziona il paese",
+        "address": "Via Roma 1",
+        "city": "Roma (RM)",
+        "zip": "00100",
+        "country": "Italia",
         "select_package_size": "Seleziona le dimensioni del pacco",
         "shipping_widget_title": "Spedisci ovunque, a qualsiasi ora",
         "shipping_widget_subtitle": "Spedizioni veloci ed affidabili per il tuo business o uso personale"
