@@ -2,7 +2,7 @@ import { Box, Card, Flex, TextField } from "@radix-ui/themes";
 import styles from "./address_widget.module.css";
 import { useTranslations } from "next-intl";
 import Icon from '@mdi/react';
-import { mdiCityVariantOutline, mdiHomeMapMarker, mdiLocationEnter, mdiMagnify, mdiTicketConfirmationOutline } from "@mdi/js";
+import { mdiCityVariantOutline, mdiHomeMapMarker, mdiMagnify, mdiTicketConfirmationOutline } from "@mdi/js";
 
 type AddressProps = {
     title: string;

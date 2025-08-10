@@ -2,7 +2,13 @@
     "Navbar": {
         "tracking": "traccia",
         "home": "home",
-        "send": "spedisci"
+        "send": "spedisci",
+        "contact": "contattaci",
+        "social": "social",
+        "instagram": "https://www.instagram.com/rosario.caggegi/",
+        "facebook": "https://www.facebook.com/rosario.caggegi.142",
+        "whatsapp": "https://wa.me/393516699666",
+        "mail": "mailto:rosariocaggegi99gmail.com"
     },
     "others": {
         "yes": "si",

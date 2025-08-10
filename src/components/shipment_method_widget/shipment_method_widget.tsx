@@ -1,8 +1,9 @@
-import { Box, Flex, Select } from "@radix-ui/themes";
+import { Flex, Select } from "@radix-ui/themes";
 import styles from "./shipment_method_widget.module.css";
-import { mdiBagChecked, mdiPackageVariantClosed, mdiTruckFastOutline } from "@mdi/js";
+import { mdiBagChecked, mdiPackageVariantClosed } from "@mdi/js";
 import Icon from "@mdi/react";
 import { useTranslations } from "next-intl";
+import TruckLoader from "../truck_loader/truck_loader";
 
 export default function ShipmentMethodWidget() {
     const s = useTranslations('standard_sizes');
@@ -51,7 +52,8 @@ export default function ShipmentMethodWidget() {
     <Flex className={styles.shipment_method}>
         <div className={styles.shipping}>
             <div className={styles.line}></div>
-            <Icon path={mdiTruckFastOutline} className={styles.icon} size={2.5} />
+            {/*<Icon path={mdiTruckFastOutline} className={styles.icon} size={2.5} />*/}
+                <TruckLoader/>
             <div className={styles.line}></div>
         </div>
         <Flex direction="column" style={{alignItems:"center"}}>
