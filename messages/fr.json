@@ -41,5 +41,16 @@
     "small": "Bagage : Poids max : 10Kg ; Volume max : 40x55x20cm",
     "medium": "Bagage : Poids max : 15Kg ; Volume max : 45x65x25cm",
     "large": "Bagage : Poids max : 25Kg ; Volume max : 50x75x50cm"
+  },
+  "tracking": {
+    "example": "UAS912321",
+    "status": {
+      "in_progress": "",
+      "completed": "",
+      "out": "out for delivery",
+      "error": "",
+      "assistance": "",
+      "placed": ""
+    }
   }
 }

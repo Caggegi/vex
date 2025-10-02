@@ -1,45 +1,57 @@
 {
-    "Navbar": {
-        "tracking": "traccia",
-        "home": "home",
-        "send": "spedisci",
-        "contact": "contattaci",
-        "social": "social",
-        "instagram": "https://www.instagram.com/rosario.caggegi/",
-        "facebook": "https://www.facebook.com/rosario.caggegi.142",
-        "whatsapp": "https://wa.me/393516699666",
-        "mail": "mailto:rosariocaggegi99gmail.com"
-    },
-    "others": {
-        "yes": "si",
-        "no": "no",
-        "save": "salva",
-        "cancel": "annulla",
-        "from":"mittente",
-        "to":"destinatario",
-        "address": "indirizzo",
-        "city": "città",
-        "zip": "cap",
-        "country": "paese"
-    },
-    "placeholders":{
-        "address": "Via Roma 1",
-        "city": "Roma (RM)",
-        "zip": "00100",
-        "country": "Italia",
-        "select_package_size": "Seleziona le dimensioni del pacco",
-        "shipping_widget_title": "Spedisci ovunque, a qualsiasi ora",
-        "shipping_widget_subtitle": "Spedizioni veloci ed affidabili per il tuo business o uso personale"
-    },
-    "standard_sizes":{
-        "1kpkg": "Pacco: Peso massimo: 1Kg; Volume massimo: 10x40x10cm",
-        "3kpkg": "Pacco: Peso massimo: 3Kg; Volume massimo: 15x50x15cm",
-        "5kpkg": "Pacco: Peso massimo: 5Kg; Volume massimo: 20x40x20cm",
-        "10kpkg": "Pacco: Peso massimo: 10Kg; Volume massimo: 30x40x30cm",
-        "20kpkg": "Pacco: Peso massimo: 20Kg; Volume massimo: 35x50x35cm",
-        "30kpkg": "Pacco: Peso massimo: 30Kg; Volume massimo: 45x50x45cm",
-        "small": "Valigia: Peso massimo: 10Kg; Volume massimo: 40x55x20cm",
-        "medium": "Valigia: Peso massimo: 15Kg; Volume massimo: 45x65x25cm",
-        "large": "Valigia: Peso massimo: 25Kg; Volume massimo: 50x75x50cm"
+  "Navbar": {
+    "tracking": "traccia",
+    "home": "home",
+    "send": "spedisci",
+    "contact": "contattaci",
+    "social": "social",
+    "instagram": "https://www.instagram.com/rosario.caggegi/",
+    "facebook": "https://www.facebook.com/rosario.caggegi.142",
+    "whatsapp": "https://wa.me/393516699666",
+    "mail": "mailto:rosariocaggegi99gmail.com"
+  },
+  "others": {
+    "yes": "si",
+    "no": "no",
+    "save": "salva",
+    "cancel": "annulla",
+    "from": "mittente",
+    "to": "destinatario",
+    "address": "indirizzo",
+    "city": "città",
+    "zip": "cap",
+    "country": "paese"
+  },
+  "placeholders": {
+    "address": "Via Roma 1",
+    "city": "Roma (RM)",
+    "zip": "00100",
+    "country": "Italia",
+    "select_package_size": "Seleziona le dimensioni del pacco",
+    "shipping_widget_title": "Spedisci ovunque, a qualsiasi ora",
+    "shipping_widget_subtitle": "Spedizioni veloci ed affidabili per il tuo business o uso personale"
+  },
+  "standard_sizes": {
+    "1kpkg": "Pacco: Peso massimo: 1Kg; Volume massimo: 10x40x10cm",
+    "3kpkg": "Pacco: Peso massimo: 3Kg; Volume massimo: 15x50x15cm",
+    "5kpkg": "Pacco: Peso massimo: 5Kg; Volume massimo: 20x40x20cm",
+    "10kpkg": "Pacco: Peso massimo: 10Kg; Volume massimo: 30x40x30cm",
+    "20kpkg": "Pacco: Peso massimo: 20Kg; Volume massimo: 35x50x35cm",
+    "30kpkg": "Pacco: Peso massimo: 30Kg; Volume massimo: 45x50x45cm",
+    "small": "Valigia: Peso massimo: 10Kg; Volume massimo: 40x55x20cm",
+    "medium": "Valigia: Peso massimo: 15Kg; Volume massimo: 45x65x25cm",
+    "large": "Valigia: Peso massimo: 25Kg; Volume massimo: 50x75x50cm"
+  },
+  "tracking": {
+    "number": "Numero tracciamento",
+    "example": "UAS912321",
+    "status": {
+      "in_progress": "in corso",
+      "completed": "completato",
+      "out": "in consegna",
+      "error": "errore",
+      "assistance": "assistenza",
+      "placed": "effettuato"
     }
+  }
 }
