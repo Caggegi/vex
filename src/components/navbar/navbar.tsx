@@ -18,8 +18,10 @@ export default function Navbar() {
     useEffect(()=>{
         let user = localStorage.getItem("user")
         if(user)
-            setUser(JSON.parse(user))
+            setUser(user)
     }, [])
+
+    useEffect(()=>{console.log(user)}, [user])
 
     return (
         <div className={styles.navbar_layout}>

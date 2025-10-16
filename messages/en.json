@@ -20,7 +20,18 @@
     "address": "address",
     "city": "city",
     "zip": "zip",
-    "country": "country"
+    "country": "country",
+    "width": "Width",
+    "height": "Height",
+    "depth": "Depth",
+    "custom_shipping": "Custom shipping",
+    "custom_shipping_subtitle": "Add a custom box size.",
+    "inch": "Inch",
+    "metric": "cm",
+    "imperial": "inches",
+    "wireframe": "Wireframe",
+    "animate": "Animate",
+    "box_max_dim_tooltip": "Set box max dimentions (unit: cm)"
   },
   "placeholders": {
     "address": "123 Main St",
@@ -40,7 +51,8 @@
     "30kpkg": "Box: Max weight: 30Kg; Max volume: 45x50x45cm",
     "small": "Luggage: Max weight: 10Kg; Max volume: 40x55x20cm",
     "medium": "Luggage: Max weight: 15Kg; Max volume: 45x65x25cm",
-    "large": "Luggage: Max weight: 25Kg; Max volume: 50x75x50cm"
+    "large": "Luggage: Max weight: 25Kg; Max volume: 50x75x50cm",
+    "custom_size": "Custom dimentions"
   },
   "tracking": {
     "number": "Tracking number",

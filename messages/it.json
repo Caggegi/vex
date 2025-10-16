@@ -20,7 +20,18 @@
     "address": "indirizzo",
     "city": "città",
     "zip": "cap",
-    "country": "paese"
+    "country": "paese",
+    "width": "Larghezza",
+    "height": "Altezza",
+    "depth": "Lunghezza",
+    "custom_shipping": "Spedizione personalizzata",
+    "custom_shipping_subtitle": "Aggiungi una dimensione perzonalizzata",
+    "inch": "pollici",
+    "metric": "cm",
+    "imperial": "pollici",
+    "wireframe": "Scheletro",
+    "animate": "Animazione",
+    "box_max_dim_tooltip": "Imposta le dimensioni massime del pacco (unità: cm)"
   },
   "placeholders": {
     "address": "Via Roma 1",
@@ -40,7 +51,8 @@
     "30kpkg": "Pacco: Peso massimo: 30Kg; Volume massimo: 45x50x45cm",
     "small": "Valigia: Peso massimo: 10Kg; Volume massimo: 40x55x20cm",
     "medium": "Valigia: Peso massimo: 15Kg; Volume massimo: 45x65x25cm",
-    "large": "Valigia: Peso massimo: 25Kg; Volume massimo: 50x75x50cm"
+    "large": "Valigia: Peso massimo: 25Kg; Volume massimo: 50x75x50cm",
+    "custom_size": "Dimensioni personalizzate"
   },
   "tracking": {
     "number": "Numero tracciamento",

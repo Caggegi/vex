@@ -20,7 +20,18 @@
     "address": "adresse",
     "city": "stadt",
     "zip": "postleitzahl",
-    "country": "land"
+    "country": "land",
+    "width": "",
+    "height": "",
+    "depth": "",
+    "custom_shipping": "",
+    "custom_shipping_subtitle": "",
+    "inch": "",
+    "metric": "",
+    "imperial": "",
+    "wireframe": "",
+    "animate": "",
+    "box_max_dim_tooltip": ""
   },
   "placeholders": {
     "address": "Musterstraße 1",
@@ -40,7 +51,8 @@
     "30kpkg": "Karton: Maximalgewicht: 30Kg; Maximalvolumen: 45x50x45cm",
     "small": "Gepäck: Maximalgewicht: 10Kg; Maximalvolumen: 40x55x20cm",
     "medium": "Gepäck: Maximalgewicht: 15Kg; Maximalvolumen: 45x65x25cm",
-    "large": "Gepäck: Maximalgewicht: 25Kg; Maximalvolumen: 50x75x50cm"
+    "large": "Gepäck: Maximalgewicht: 25Kg; Maximalvolumen: 50x75x50cm",
+    "custom_size": ""
   },
   "tracking": {
     "example": "UAS912321",

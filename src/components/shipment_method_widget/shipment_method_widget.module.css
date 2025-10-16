@@ -45,6 +45,13 @@
     margin: 8px;
   }
 
+
+
+  .flex_content_new_box{
+    width: 36vw;
+    height: 50vh;
+  }
+
 @media screen and (max-width: 940px) {
   .shipping{
     display:none
@@ -56,5 +63,16 @@
 
   .shipment_method {
     flex-direction: row-reverse;
+  }
+
+  .flex_new_box{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex_content_new_box{
+    width: 100%;
+    height: 100%;
   }
 }

@@ -20,7 +20,18 @@
     "address": "adresse",
     "city": "ville",
     "zip": "code postal",
-    "country": "pays"
+    "country": "pays",
+    "width": "",
+    "height": "",
+    "depth": "",
+    "custom_shipping": "",
+    "custom_shipping_subtitle": "",
+    "inch": "",
+    "metric": "",
+    "imperial": "",
+    "wireframe": "",
+    "animate": "",
+    "box_max_dim_tooltip": ""
   },
   "placeholders": {
     "address": "Rue de la Paix 1",
@@ -40,7 +51,8 @@
     "30kpkg": "Boîte : Poids max : 30Kg ; Volume max : 45x50x45cm",
     "small": "Bagage : Poids max : 10Kg ; Volume max : 40x55x20cm",
     "medium": "Bagage : Poids max : 15Kg ; Volume max : 45x65x25cm",
-    "large": "Bagage : Poids max : 25Kg ; Volume max : 50x75x50cm"
+    "large": "Bagage : Poids max : 25Kg ; Volume max : 50x75x50cm",
+    "custom_size": "Custom dimentions"
   },
   "tracking": {
     "example": "UAS912321",

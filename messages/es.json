@@ -20,7 +20,18 @@
     "address": "dirección",
     "city": "ciudad",
     "zip": "código postal",
-    "country": "país"
+    "country": "país",
+    "width": "",
+    "height": "",
+    "depth": "",
+    "custom_shipping": "",
+    "custom_shipping_subtitle": "",
+    "inch": "",
+    "metric": "",
+    "imperial": "",
+    "wireframe": "",
+    "animate": "",
+    "box_max_dim_tooltip": ""
   },
   "placeholders": {
     "address": "Calle Mayor 1",
@@ -40,7 +51,8 @@
     "30kpkg": "Caja: Peso máx.: 30Kg; Volumen máx.: 45x50x45cm",
     "small": "Equipaje: Peso máx.: 10Kg; Volumen máx.: 40x55x20cm",
     "medium": "Equipaje: Peso máx.: 15Kg; Volumen máx.: 45x65x25cm",
-    "large": "Equipaje: Peso máx.: 25Kg; Volumen máx.: 50x75x50cm"
+    "large": "Equipaje: Peso máx.: 25Kg; Volumen máx.: 50x75x50cm",
+    "custom_size": "Custom dimentions"
   },
   "tracking": {
     "example": "UAS912321",

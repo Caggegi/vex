@@ -4,6 +4,8 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const nextConfig: NextConfig = {
   /* config options here */
   trailingSlash: true,
+  transpilePackages: ['three'],
+
 };
 
 const withNextIntl = createNextIntlPlugin();

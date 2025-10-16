@@ -7,7 +7,7 @@ export default function AdministrationPage() {
     useEffect(()=>{
         let user = localStorage.getItem("user")
         if(user)
-            setUser(JSON.parse(user))
+            setUser(user)
     }, [])
     if(user && user.admin)
         return <>

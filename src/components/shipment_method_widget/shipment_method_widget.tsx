@@ -1,9 +1,10 @@
-import { Flex, Select } from "@radix-ui/themes";
+import { Dialog, Flex, Select } from "@radix-ui/themes";
 import styles from "./shipment_method_widget.module.css";
-import { mdiBagChecked, mdiPackageVariantClosed } from "@mdi/js";
+import { mdiBagChecked, mdiPackageVariantClosed, mdiPackageVariantClosedPlus, mdiPlusBox, mdiPlusBoxOutline } from "@mdi/js";
 import Icon from "@mdi/react";
 import { useTranslations } from "next-intl";
 import TruckLoader from "../truck_loader/truck_loader";
+import CustomSizeDialog from "./custom_size_dialog";
 
 export default function ShipmentMethodWidget() {
     const s = useTranslations('standard_sizes');
@@ -46,6 +47,10 @@ export default function ShipmentMethodWidget() {
             icon: mdiBagChecked,
             value: "9",
             placeholder: s("large")
+        }, {
+            icon: mdiPackageVariantClosedPlus,
+            value: "10",
+            placeholder: s("custom_size")
         }
     ]
     return (
@@ -77,6 +82,9 @@ export default function ShipmentMethodWidget() {
         </Flex>
             <div className={styles.vline}></div>
         </Flex>
+        <Dialog.Root open={true}>
+            <CustomSizeDialog/>
+        </Dialog.Root>
     </Flex>
     )
 }
