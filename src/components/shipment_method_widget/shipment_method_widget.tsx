@@ -82,7 +82,7 @@ export default function ShipmentMethodWidget() {
         </Flex>
             <div className={styles.vline}></div>
         </Flex>
-        <Dialog.Root open={true}>
+        <Dialog.Root open={false}>
             <CustomSizeDialog/>
         </Dialog.Root>
     </Flex>
