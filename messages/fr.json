@@ -1,0 +1,68 @@
+{
+  "Navbar": {
+    "tracking": "suivi",
+    "home": "accueil",
+    "send": "envoyer",
+    "contact": "contact",
+    "social": "réseaux sociaux",
+    "instagram": "https://www.instagram.com/rosario.caggegi/",
+    "facebook": "https://www.facebook.com/rosario.caggegi.142",
+    "whatsapp": "https://wa.me/393516699666",
+    "mail": "mailto:rosariocaggegi99gmail.com"
+  },
+  "others": {
+    "yes": "oui",
+    "no": "non",
+    "save": "enregistrer",
+    "cancel": "annuler",
+    "from": "de",
+    "to": "à",
+    "address": "adresse",
+    "city": "ville",
+    "zip": "code postal",
+    "country": "pays",
+    "width": "",
+    "height": "",
+    "depth": "",
+    "custom_shipping": "",
+    "custom_shipping_subtitle": "",
+    "inch": "",
+    "metric": "",
+    "imperial": "",
+    "wireframe": "",
+    "animate": "",
+    "box_max_dim_tooltip": ""
+  },
+  "placeholders": {
+    "address": "Rue de la Paix 1",
+    "city": "Paris",
+    "zip": "75001",
+    "country": "France",
+    "select_package_size": "Sélectionnez la taille du colis",
+    "shipping_widget_title": "Expédiez partout, à tout moment",
+    "shipping_widget_subtitle": "Des solutions d'expédition rapides et fiables pour vos besoins professionnels et personnels"
+  },
+  "standard_sizes": {
+    "1kpkg": "Boîte : Poids max : 1Kg ; Volume max : 10x40x10cm",
+    "3kpkg": "Boîte : Poids max : 3Kg ; Volume max : 15x50x15cm",
+    "5kpkg": "Boîte : Poids max : 5Kg ; Volume max : 20x40x20cm",
+    "10kpkg": "Boîte : Poids max : 10Kg ; Volume max : 30x40x30cm",
+    "20kpkg": "Boîte : Poids max : 20Kg ; Volume max : 35x50x35cm",
+    "30kpkg": "Boîte : Poids max : 30Kg ; Volume max : 45x50x45cm",
+    "small": "Bagage : Poids max : 10Kg ; Volume max : 40x55x20cm",
+    "medium": "Bagage : Poids max : 15Kg ; Volume max : 45x65x25cm",
+    "large": "Bagage : Poids max : 25Kg ; Volume max : 50x75x50cm",
+    "custom_size": "Custom dimentions"
+  },
+  "tracking": {
+    "example": "UAS912321",
+    "status": {
+      "in_progress": "",
+      "completed": "",
+      "out": "out for delivery",
+      "error": "",
+      "assistance": "",
+      "placed": ""
+    }
+  }
+}

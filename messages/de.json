@@ -1,0 +1,68 @@
+{
+  "Navbar": {
+    "tracking": "verfolgung",
+    "home": "startseite",
+    "send": "senden",
+    "contact": "kontakt",
+    "social": "soziale netzwerke",
+    "instagram": "https://www.instagram.com/rosario.caggegi/",
+    "facebook": "https://www.facebook.com/rosario.caggegi.142",
+    "whatsapp": "https://wa.me/393516699666",
+    "mail": "mailto:rosariocaggegi99gmail.com"
+  },
+  "others": {
+    "yes": "ja",
+    "no": "nein",
+    "save": "speichern",
+    "cancel": "abbrechen",
+    "from": "von",
+    "to": "nach",
+    "address": "adresse",
+    "city": "stadt",
+    "zip": "postleitzahl",
+    "country": "land",
+    "width": "",
+    "height": "",
+    "depth": "",
+    "custom_shipping": "",
+    "custom_shipping_subtitle": "",
+    "inch": "",
+    "metric": "",
+    "imperial": "",
+    "wireframe": "",
+    "animate": "",
+    "box_max_dim_tooltip": ""
+  },
+  "placeholders": {
+    "address": "Musterstraße 1",
+    "city": "Musterstadt",
+    "zip": "12345",
+    "country": "Deutschland",
+    "select_package_size": "Wählen Sie die Paketgröße",
+    "shipping_widget_title": "Überall und jederzeit versenden",
+    "shipping_widget_subtitle": "Schnelle, zuverlässige Versandlösungen für Ihre geschäftlichen und persönlichen Bedürfnisse"
+  },
+  "standard_sizes": {
+    "1kpkg": "Karton: Maximalgewicht: 1Kg; Maximalvolumen: 10x40x10cm",
+    "3kpkg": "Karton: Maximalgewicht: 3Kg; Maximalvolumen: 15x50x15cm",
+    "5kpkg": "Karton: Maximalgewicht: 5Kg; Maximalvolumen: 20x40x20cm",
+    "10kpkg": "Karton: Maximalgewicht: 10Kg; Maximalvolumen: 30x40x30cm",
+    "20kpkg": "Karton: Maximalgewicht: 20Kg; Maximalvolumen: 35x50x35cm",
+    "30kpkg": "Karton: Maximalgewicht: 30Kg; Maximalvolumen: 45x50x45cm",
+    "small": "Gepäck: Maximalgewicht: 10Kg; Maximalvolumen: 40x55x20cm",
+    "medium": "Gepäck: Maximalgewicht: 15Kg; Maximalvolumen: 45x65x25cm",
+    "large": "Gepäck: Maximalgewicht: 25Kg; Maximalvolumen: 50x75x50cm",
+    "custom_size": ""
+  },
+  "tracking": {
+    "example": "UAS912321",
+    "status": {
+      "in_progress": "",
+      "completed": "",
+      "out": "out for delivery",
+      "error": "",
+      "assistance": "",
+      "placed": ""
+    }
+  }
+}

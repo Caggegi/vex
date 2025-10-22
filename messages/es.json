@@ -1,0 +1,68 @@
+{
+  "Navbar": {
+    "tracking": "seguimiento",
+    "home": "inicio",
+    "send": "enviar",
+    "contact": "contacto",
+    "social": "redes sociales",
+    "instagram": "https://www.instagram.com/rosario.caggegi/",
+    "facebook": "https://www.facebook.com/rosario.caggegi.142",
+    "whatsapp": "https://wa.me/393516699666",
+    "mail": "mailto:rosariocaggegi99gmail.com"
+  },
+  "others": {
+    "yes": "sí",
+    "no": "no",
+    "save": "guardar",
+    "cancel": "cancelar",
+    "from": "de",
+    "to": "a",
+    "address": "dirección",
+    "city": "ciudad",
+    "zip": "código postal",
+    "country": "país",
+    "width": "",
+    "height": "",
+    "depth": "",
+    "custom_shipping": "",
+    "custom_shipping_subtitle": "",
+    "inch": "",
+    "metric": "",
+    "imperial": "",
+    "wireframe": "",
+    "animate": "",
+    "box_max_dim_tooltip": ""
+  },
+  "placeholders": {
+    "address": "Calle Mayor 1",
+    "city": "Madrid",
+    "zip": "28001",
+    "country": "España",
+    "select_package_size": "Seleccione el tamaño del paquete",
+    "shipping_widget_title": "Envíe a cualquier lugar, en cualquier momento",
+    "shipping_widget_subtitle": "Soluciones de envío rápidas y fiables para sus necesidades comerciales y personales"
+  },
+  "standard_sizes": {
+    "1kpkg": "Caja: Peso máx.: 1Kg; Volumen máx.: 10x40x10cm",
+    "3kpkg": "Caja: Peso máx.: 3Kg; Volumen máx.: 15x50x15cm",
+    "5kpkg": "Caja: Peso máx.: 5Kg; Volumen máx.: 20x40x20cm",
+    "10kpkg": "Caja: Peso máx.: 10Kg; Volumen máx.: 30x40x30cm",
+    "20kpkg": "Caja: Peso máx.: 20Kg; Volumen máx.: 35x50x35cm",
+    "30kpkg": "Caja: Peso máx.: 30Kg; Volumen máx.: 45x50x45cm",
+    "small": "Equipaje: Peso máx.: 10Kg; Volumen máx.: 40x55x20cm",
+    "medium": "Equipaje: Peso máx.: 15Kg; Volumen máx.: 45x65x25cm",
+    "large": "Equipaje: Peso máx.: 25Kg; Volumen máx.: 50x75x50cm",
+    "custom_size": "Custom dimentions"
+  },
+  "tracking": {
+    "example": "UAS912321",
+    "status": {
+      "in_progress": "",
+      "completed": "",
+      "out": "out for delivery",
+      "error": "",
+      "assistance": "",
+      "placed": ""
+    }
+  }
+}

@@ -8,12 +8,12 @@
     flex-direction: row;
 }
 
-.shipping_widget{
-    background-color: white;
+.tracking_widget{
+    margin: 0 32px;
 }
 
-.package_size_title{
-    margin-bottom: 8px;
+.search_button{
+    margin: 16px 0 0 0;
 }
 
 .title{
@@ -22,6 +22,7 @@
     h1{
         font-size: xx-large;
         margin-bottom:12px;
+        text-transform: capitalize;
     }
     p{
         font-size: medium;

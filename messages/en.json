@@ -1,12 +1,69 @@
 {
-    "Navbar": {
-        "tracking": "tracking",
-        "home": "home"
-    },
-    "others":{
-        "yes":"yes",
-        "no":"no",
-        "save":"save",
-        "cancel":"cancel"
+  "Navbar": {
+    "tracking": "tracking",
+    "home": "home",
+    "send": "send",
+    "contact": "contact",
+    "social": "social",
+    "instagram": "https://www.instagram.com/rosario.caggegi/",
+    "facebook": "https://www.facebook.com/rosario.caggegi.142",
+    "whatsapp": "https://wa.me/393516699666",
+    "mail": "mailto:rosariocaggegi99gmail.com"
+  },
+  "others": {
+    "yes": "yes",
+    "no": "no",
+    "save": "save",
+    "cancel": "cancel",
+    "from": "from",
+    "to": "to",
+    "address": "address",
+    "city": "city",
+    "zip": "zip",
+    "country": "country",
+    "width": "Width",
+    "height": "Height",
+    "depth": "Depth",
+    "custom_shipping": "Custom shipping",
+    "custom_shipping_subtitle": "Add a custom box size.",
+    "inch": "Inch",
+    "metric": "cm",
+    "imperial": "inches",
+    "wireframe": "Wireframe",
+    "animate": "Animate",
+    "box_max_dim_tooltip": "Set box max dimentions (unit: cm)"
+  },
+  "placeholders": {
+    "address": "123 Main St",
+    "city": "Anytown",
+    "zip": "12345",
+    "country": "United States",
+    "select_package_size": "Select the package size",
+    "shipping_widget_title": "Ship Anywhere, Anytime",
+    "shipping_widget_subtitle": "Fast, reliable shipping solutions for your business and personal needs"
+  },
+  "standard_sizes": {
+    "1kpkg": "Box: Max weight: 1Kg; Max volume: 10x40x10cm",
+    "3kpkg": "Box: Max weight: 3Kg; Max volume: 15x50x15cm",
+    "5kpkg": "Box: Max weight: 5Kg; Max volume: 20x40x20cm",
+    "10kpkg": "Box: Max weight: 10Kg; Max volume: 30x40x30cm",
+    "20kpkg": "Box: Max weight: 20Kg; Max volume: 35x50x35cm",
+    "30kpkg": "Box: Max weight: 30Kg; Max volume: 45x50x45cm",
+    "small": "Luggage: Max weight: 10Kg; Max volume: 40x55x20cm",
+    "medium": "Luggage: Max weight: 15Kg; Max volume: 45x65x25cm",
+    "large": "Luggage: Max weight: 25Kg; Max volume: 50x75x50cm",
+    "custom_size": "Custom dimentions"
+  },
+  "tracking": {
+    "number": "Tracking number",
+    "example": "UAS912321",
+    "status": {
+      "in_progress": "in progress",
+      "completed": "completed",
+      "out": "out for delivery",
+      "error": "error",
+      "assistance": "assistance",
+      "placed": "placed"
     }
+  }
 }
