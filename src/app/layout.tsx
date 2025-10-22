@@ -3,7 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
-import Navbar from "@/components/navbar/navbar";
+import ShowNavbarClient from "@/components/navbar/show_navbar_client";
+import AuthGuard from "@/components/auth/auth_guard_client";
 import { NextIntlClientProvider } from 'next-intl';
 import Footer from "@/components/footer/footer";
 
@@ -32,9 +33,11 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NextIntlClientProvider>
           <Theme appearance="light" accentColor="lime" hasBackground={true} className="backimage">
-            <Navbar />
-            {children}
-            <Footer/>
+            <AuthGuard>
+              <ShowNavbarClient />
+              {children}
+              <Footer />
+            </AuthGuard>
           </Theme>
         </NextIntlClientProvider>
       </body>
