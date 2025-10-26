@@ -1,0 +1,15 @@
+.contact_header {
+    font-weight: normal;
+}
+
+.toColumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 945px) {
+  .toColumn {
+    flex-direction: column;
+  }
+}

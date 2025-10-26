@@ -8,7 +8,11 @@
     "instagram": "https://www.instagram.com/rosario.caggegi/",
     "facebook": "https://www.facebook.com/rosario.caggegi.142",
     "whatsapp": "https://wa.me/393516699666",
-    "mail": "mailto:rosariocaggegi99gmail.com"
+    "mail": "mailto:rosariocaggegi99gmail.com",
+    "about": "Chi siamo",
+    "contacts": "Contattaci",
+    "services": "Servizi",
+    "login": "Accedi / Registrati"
   },
   "others": {
     "yes": "si",
@@ -39,7 +43,7 @@
     "zip": "00100",
     "country": "Italia",
     "select_package_size": "Seleziona le dimensioni del pacco",
-    "shipping_widget_title": "Spedisci ovunque, a qualsiasi ora",
+    "shipping_widget_title": "Spedisci facile, spedisci ",
     "shipping_widget_subtitle": "Spedizioni veloci ed affidabili per il tuo business o uso personale"
   },
   "standard_sizes": {
@@ -65,5 +69,23 @@
       "assistance": "assistenza",
       "placed": "effettuato"
     }
+  },
+  "paragraph": {
+    "p1": "Con Vex One puoi confrontare corrieri online e trovare in pochi secondi la spedizione più economica e sicura per il tuo pacco.",
+    "p2": "Il nostro servizio ti permette di spedire in tutta Italia e all'estero scegliendo tra i migliori corrieri nazionali e internazionali, con tariffe trasparenti e vantaggiose.",
+    "p3": "Perchè scegliere Vex One:",
+    "p4": "Scopri subito quanto puoi risparmiare e spedisci online con VexOne. La nuova esperienza di spedizione semplice, veloce e conveniente.",
+    "ul1": "Confronto immediato tra i migliori corrieri online",
+    "ul2": "Spedizioni economiche e senza costi nascosti ",
+    "ul3": "Servizio rapido, affidabile e tracciabile",
+    "ul4": "Gestione delle spedizioni semplice e 100% digitale",
+    "p5": "Scegli i migliori del settore per spedizioni veloci ed affidabili",
+    "ul5": "Ritiro e consegna a domicilio",
+    "ul6": "Spedizioni nazionali a partire da 3,70 euro",
+    "ul7": "Spedizione in contrassegno",
+    "ul8": "Consegna su appuntamento",
+    "subscribe_news_letter": "Iscriviti alla nostra Newsletter",
+    "discount": "Ottieni subito uno sconto alla tua prima spedizione",
+    "mail_address": "Indirizzo mail"
   }
 }

@@ -9,7 +9,7 @@
 }
 
 .shipping_widget{
-    background-color: white;
+    background-color: none;
 }
 
 .package_size_title{
@@ -22,10 +22,11 @@
     h1{
         font-size: xx-large;
         margin-bottom:12px;
+        color: rgb(255, 255, 255);
     }
     p{
         font-size: medium;
-        color: grey;
+        color: rgb(255, 255, 255);
     }
 }
 

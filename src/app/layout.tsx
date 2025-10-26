@@ -6,6 +6,7 @@ import { Theme } from "@radix-ui/themes";
 import Navbar from "@/components/navbar/navbar";
 import { NextIntlClientProvider } from 'next-intl';
 import Footer from "@/components/footer/footer";
+import ReduxProvider from "./provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,10 +32,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NextIntlClientProvider>
-          <Theme appearance="light" accentColor="lime" hasBackground={true} className="backimage">
-            <Navbar />
-            {children}
-            <Footer/>
+          <Theme appearance="light" accentColor="blue" hasBackground={true} className="backimage">
+            <ReduxProvider>
+              <Navbar />
+              {children}
+            </ReduxProvider>
+            <Footer />
           </Theme>
         </NextIntlClientProvider>
       </body>

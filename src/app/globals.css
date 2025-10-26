@@ -1,6 +1,8 @@
 :root {
   --foreground: #000000;
   --background: #ffffff;
+  --accentgreen: #C7FD50;
+  --accentblue: #3376F7;
 }
 
 .capitalize{
@@ -14,7 +16,7 @@ body {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

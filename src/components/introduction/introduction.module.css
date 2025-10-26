@@ -1,0 +1,19 @@
+.whyus {
+  background-color: var(--accentgreen);
+  padding: 8px 24px;
+  width: fit-content;
+  border-radius: 48px;
+  color: var(--accentblue)
+}
+
+.toColumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 945px) {
+  .toColumn {
+    flex-direction: column;
+  }
+}

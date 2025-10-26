@@ -20,15 +20,17 @@
     "@mdi/js": "^7.4.47",
     "@mdi/react": "^1.6.1",
     "@radix-ui/themes": "3.2.1",
-    "@react-three/fiber": "^9.4.0",
-    "@types/three": "^0.180.0",
+    "@react-three/fiber": "9.4.0",
+    "@reduxjs/toolkit": "2.9.2",
+    "@types/three": "0.180.0",
     "animejs": "4.1.2",
     "next": "15.4.1",
-    "next-intl": "^4.3.4",
+    "next-intl": "4.3.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "react-redux": "9.2.0",
     "react-stately": "3.40.0",
-    "three": "^0.180.0"
+    "three": "0.180.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "3",

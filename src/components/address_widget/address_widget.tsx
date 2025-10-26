@@ -16,7 +16,7 @@ export default function AddressWidget(props: AddressProps) {
     return (
         <Card className={styles.card} variant="ghost">
             <Flex className={styles.card_header}>
-                <Icon path={props.icon} className={styles.icon} />
+                <Icon path={props.icon} className={styles.icon} color="#3376F7"/>
                 <span className={styles.title}>{props.title}</span>
             </Flex>
             <form>

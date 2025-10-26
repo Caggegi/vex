@@ -8,7 +8,11 @@
     "instagram": "https://www.instagram.com/rosario.caggegi/",
     "facebook": "https://www.facebook.com/rosario.caggegi.142",
     "whatsapp": "https://wa.me/393516699666",
-    "mail": "mailto:rosariocaggegi99gmail.com"
+    "mail": "mailto:rosariocaggegi99gmail.com",
+    "about": "",
+    "contacts": "",
+    "services": "",
+    "login": ""
   },
   "others": {
     "yes": "ja",
@@ -64,5 +68,23 @@
       "assistance": "",
       "placed": ""
     }
+  },
+  "paragraph": {
+    "p1": "",
+    "p2": "",
+    "p3": "",
+    "p4": "",
+    "ul1": "",
+    "ul2": "",
+    "ul3": "",
+    "ul4": "",
+    "p5": "",
+    "ul5": "",
+    "ul6": "",
+    "ul7": "",
+    "ul8": "",
+    "subscribe_news_letter": "",
+    "discount": "",
+    "mail_address": ""
   }
 }

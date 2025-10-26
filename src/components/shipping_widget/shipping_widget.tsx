@@ -36,24 +36,24 @@ export default function ShippingWidget() {
     return (
         <>
             <div className={styles.title} ref={titleRef}>
-                <h1 className="animated">{p("shipping_widget_title")}</h1>
+                <h1 className="animated">{p("shipping_widget_title")}<b style={{color:"#C7FD50"}}>Vex</b>.</h1>
                 <p className="animated">
                     {p("shipping_widget_subtitle")}
                 </p>
             </div>
-            <Card className={styles.shipping_widget}>
+            <Box className={styles.shipping_widget}>
                 <Flex gap="3" align="center" className={styles.main_box}>
-                    <Box>
+                    <Card>
                         <AddressWidget title={t("from")} icon={mdiHomeOutline} />
-                    </Box>
+                    </Card>
                     <Box>
                         <ShipmentMethodWidget />
                     </Box>
-                    <Box>
+                    <Card>
                         <AddressWidget title={t("to")} icon={mdiMapMarkerOutline} />
-                    </Box>
+                    </Card>
                 </Flex>
-            </Card>
+            </Box>
         </>
     )
 }
