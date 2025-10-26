@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 export default function WhyUS() {
     const p = useTranslations('paragraph');
 
-    return <div className={styles.toColumn} style={{ alignItems: "end" }}>
+    return <div className={styles.toColumn}>
         <Flex direction="column">
             <span data-line="0">
                 {p("p1")}

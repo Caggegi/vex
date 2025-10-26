@@ -40,4 +40,8 @@
   .toColumn {
     flex-direction: column;
   }
+  .backgroundImage{
+    min-height: 100vh;
+    clip-path: none;
+  }
 }

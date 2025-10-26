@@ -54,37 +54,37 @@ export default function ShipmentMethodWidget() {
         }
     ]
     return (
-    <Flex className={styles.shipment_method}>
-        <div className={styles.shipping}>
-            <div className={styles.line}></div>
-            {/*<Icon path={mdiTruckFastOutline} className={styles.icon} size={2.5} />*/}
-                <TruckLoader/>
-            <div className={styles.line}></div>
-        </div>
-        <Flex direction="column" style={{alignItems:"center"}}>
-            <div className={styles.vline}></div>
-        <Flex  className={styles.formbox} direction="column">
-            <span className={styles.package_size_title}>
-                {p("select_package_size")}
-            </span>
-            <form className={styles.form}>
-                <Select.Root size="3" defaultValue={standard_sizes[0].value}>
-                    <Select.Trigger style={{width:"100%"}}/>
-                    <Select.Content>
-                        {standard_sizes.map(element => (
-                            <Select.Item key={element.value} value={element.value}>
-                                <Flex><Icon path={element.icon} size={1} /><span>{element.placeholder}</span></Flex>
-                            </Select.Item>
-                        ))}
-                    </Select.Content>
-                </Select.Root>
-            </form>
+        <Flex className={styles.shipment_method}>
+            <div className={styles.shipping}>
+                <div className={styles.line}></div>
+                {/*<Icon path={mdiTruckFastOutline} className={styles.icon} size={2.5} />*/}
+                <TruckLoader />
+                <div className={styles.line}></div>
+            </div>
+            {false && <Flex direction="column" style={{ alignItems: "center" }}>
+                <div className={styles.vline}></div>
+                <Flex className={styles.formbox} direction="column">
+                    <span className={styles.package_size_title}>
+                        {p("select_package_size")}
+                    </span>
+                    <form className={styles.form}>
+                        <Select.Root size="3" defaultValue={standard_sizes[0].value}>
+                            <Select.Trigger style={{ width: "100%" }} />
+                            <Select.Content>
+                                {standard_sizes.map(element => (
+                                    <Select.Item key={element.value} value={element.value}>
+                                        <Flex><Icon path={element.icon} size={1} /><span>{element.placeholder}</span></Flex>
+                                    </Select.Item>
+                                ))}
+                            </Select.Content>
+                        </Select.Root>
+                    </form>
+                </Flex>
+                <div className={styles.vline}></div>
+            </Flex>}
+            <Dialog.Root open={false}>
+                <CustomSizeDialog />
+            </Dialog.Root>
         </Flex>
-            <div className={styles.vline}></div>
-        </Flex>
-        <Dialog.Root open={false}>
-            <CustomSizeDialog/>
-        </Dialog.Root>
-    </Flex>
     )
 }

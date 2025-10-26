@@ -10,10 +10,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: end;
 }
 
 @media (max-width: 945px) {
   .toColumn {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
   }
 }
