@@ -11,11 +11,10 @@ export default function WhyUS() {
                 {p("p1")}
             </span>
             <br />
-            <br />
-            <span data-line="1">
+            <span data-line="1" style={{marginBottom:"124px"}}>
                 {p("p2")}
             </span>
         </Flex>
-        <img src="/images/Cardboard_Boxes.png" alt="boxes" style={{ width: "40%", height: "100%" }} />
+        <img src="/vectors/Van.svg" alt="boxes" style={{ width: "60%", height: "100%" }} />
     </div>
 }

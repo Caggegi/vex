@@ -3,6 +3,7 @@ import { Box, Card, Flex } from "@radix-ui/themes";
 import styles from "./shipping_widget.module.css";
 import AddressWidget from "../address_widget/address_widget";
 import ShipmentMethodWidget from "../shipment_method_widget/shipment_method_widget";
+import { PackageWidget } from "../packages_widget/package_widget";
 import { useTranslations } from 'next-intl';
 import { mdiHomeOutline, mdiMapMarkerOutline } from "@mdi/js";
 import { useEffect, useRef } from "react";
@@ -54,6 +55,7 @@ export default function ShippingWidget() {
                     </Card>
                 </Flex>
             </Box>
+            <PackageWidget />
         </>
     )
 }

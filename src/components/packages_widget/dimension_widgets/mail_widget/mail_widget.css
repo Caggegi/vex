@@ -1,0 +1,69 @@
+@import "@radix-ui/colors/black-alpha.css";
+@import "@radix-ui/colors/violet.css";
+@import "@radix-ui/colors/mauve.css";
+
+/* reset */
+input,
+button {
+	all: unset;
+	box-sizing: border-box;
+}
+
+.FormRoot {
+	width: 50px;
+}
+
+.FormField {
+	display: grid;	
+}
+
+.FormLabel {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 35px;
+}
+
+.FormMessage {
+	font-size: 13px;
+	opacity: 0.8;
+}
+
+.Input{
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	font-size: 15px;
+	box-shadow: 0 0 0 1px var(--black-a6);
+}
+
+.Input:hover{
+	box-shadow: 0 0 0 1px black;
+}
+
+.Input:focus{
+	box-shadow: 0 0 0 2px black;
+}
+
+.Input::selection{
+	background-color: var(--black-a6);
+	color: white;
+}
+
+.Input {
+	padding: 0 10px;
+	height: 35px;
+	line-height: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}

@@ -21,16 +21,6 @@ export default function AddressWidget(props: AddressProps) {
             </Flex>
             <form>
                 <Flex direction="column">
-                    <Box className={styles.form_row}>
-                        <span className="capitalize">
-                            {t("address")}
-                        </span>
-                        <TextField.Root placeholder={p("address")}>
-                            <TextField.Slot>
-                                <Icon path={mdiMagnify} size={0.5} />
-                            </TextField.Slot>
-                        </TextField.Root>
-                    </Box>
                     <Flex className={styles.form_row}>
                         <Flex direction="column" style={{ margin: "0 4px 0 0" }}>
                             <span className="capitalize">

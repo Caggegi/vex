@@ -7,7 +7,7 @@ export default function ContactShortcut() {
     const n = useTranslations('Navbar');
     
     return <div className={styles.toColumn} style={{ alignItems: "center" }}>
-        <img src="/images/Taped_Cardboard_Box_3.jpg" alt="cardboard" style={{ width: "40%", height: "100%", padding:"24px" }} />
+        <img src="/vectors/Mailer_Box_Mockup_1.svg" alt="cardboard" style={{ width: "40%", height: "100%", padding:"24px" }} />
         <Flex direction="column">
             <h1 data-line="2" className={styles.contact_header}>
                 {p("p5")}

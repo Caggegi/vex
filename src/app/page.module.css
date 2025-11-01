@@ -8,7 +8,7 @@
 .backgroundImage {
   z-index: -1;
   background-image: url("/images/backdrop.jpg");
-  min-height: 800px;
+  min-height: 100vh;
   min-width: 100vw;
   position: absolute;
   top: 0;
