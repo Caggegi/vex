@@ -3,9 +3,13 @@ import Icon from "@mdi/react"
 import { Card, Text, Flex, IconButton, Separator } from "@radix-ui/themes"
 import { Form } from "radix-ui"
 import "./mail_widget.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
-export const MailWidget = () => {
+type PackageDimensionWidgetProps = {
+    id: number;
+    removePackage: (id: number) => void;
+}
+export const MailWidget = ({id, removePackage}:PackageDimensionWidgetProps) => {
 
     const [count, setCount] = useState(1);
 
@@ -14,6 +18,7 @@ export const MailWidget = () => {
             if(value>0){
                 return value-1
             }
+            removePackage(id);
             return value
         })
     }
@@ -27,8 +32,13 @@ export const MailWidget = () => {
         })
     }
 
+    useEffect(()=>{
+        if(count<1)
+            removePackage(id);
+    },[count])
+
     return (
-        <Card>
+        <Card style={{minHeight:"64px"}}>
             <Flex gap="2" align="center">
                 <Icon path={mdiEmailOutline} size={1}></Icon>
                 <Flex align="center">

@@ -42,19 +42,19 @@ export default function ShippingWidget() {
                     {p("shipping_widget_subtitle")}
                 </p>
             </div>
-            <Box className={styles.shipping_widget}>
+            <Flex className={styles.shipping_widget} align="center" direction="column" justify="center" gap="5">
                 <Flex gap="3" align="center" className={styles.main_box}>
                     <Card>
                         <AddressWidget title={t("from")} icon={mdiHomeOutline} />
                     </Card>
-                    <Box>
+                    <Flex align="center" justify="center">
                         <ShipmentMethodWidget />
-                    </Box>
+                    </Flex>
                     <Card>
                         <AddressWidget title={t("to")} icon={mdiMapMarkerOutline} />
                     </Card>
                 </Flex>
-            </Box>
+            </Flex>
             <PackageWidget />
         </>
     )
