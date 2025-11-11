@@ -85,6 +85,25 @@
     "ul8": "",
     "subscribe_news_letter": "",
     "discount": "",
-    "mail_address": ""
+    "mail_address": "",
+    "whyus_subtitle": "",
+    "whyus_chips": "",
+    "whyus_title": "",
+    "card_1_title": "",
+    "card_2_title": "",
+    "card_3_title": "",
+    "card_1_description": "",
+    "card_2_description": "",
+    "card_3_description": "",
+    "card_1_button": "",
+    "card_2_button": "",
+    "card_3_button": "",
+    "calcola_risparmio": "",
+    "calcola_risparmio_button": "",
+    "setup_shipping_title": "",
+    "setup_shipping_subtitle": "",
+    "step_1_title": "",
+    "step_1_subtitle": "",
+    "start_shipping": ""
   }
 }

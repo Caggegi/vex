@@ -6,6 +6,7 @@ import CouriersStrip from "@/components/couriers_strip/couriers_strip";
 import ContactShortcut from "@/components/contact_shortcut/contact_shortcut";
 import WhyUS from "@/components/whyus/whyus";
 import Introduction from "@/components/introduction/introduction";
+import SetupShipping from "@/components/setup_shipping/setup_shipping";
 
 export default function Home() {
 
@@ -19,7 +20,8 @@ export default function Home() {
         <Introduction/>
         <WhyUS/>
         <CouriersStrip/>
-        <ContactShortcut/>
+        <SetupShipping/>
+        {false && <ContactShortcut/>}
       </Flex>
     </div>
   );

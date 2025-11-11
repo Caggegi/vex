@@ -5,6 +5,16 @@ const nextConfig: NextConfig = {
   /* config options here */
   trailingSlash: true,
   transpilePackages: ['three'],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'logo.clearbit.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
 
 };
 

@@ -6,6 +6,25 @@
   color: var(--accentblue)
 }
 
+.icon_card{
+  background-color: var(--accentblue);
+  border-radius: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin:  0px;
+}
+
+.card{
+  min-height: 0px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: gray;
+}
+
 .toColumn {
   display: flex;
   flex-direction: row;
