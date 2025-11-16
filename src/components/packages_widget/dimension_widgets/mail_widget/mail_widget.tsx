@@ -33,7 +33,7 @@ export const MailWidget = ({id, removePackage}:PackageDimensionWidgetProps) => {
     }
 
     useEffect(()=>{
-        if(count<1)
+        if(count===0)
             removePackage(id);
     },[count])
 

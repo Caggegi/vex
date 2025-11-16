@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import styles from './package_widget.module.css';
 import { Card, Flex, Text, Button, Select } from '@radix-ui/themes';
 import { mdiBagChecked, mdiEmailOutline, mdiPackageVariantClosed, mdiShippingPallet } from '@mdi/js';
@@ -7,6 +7,8 @@ import { Icon } from '@mdi/react';
 import { PackageDimensionWidget } from './dimension_widgets/package_dimension_widget/package_dimension_widget';
 import { MailWidget } from './dimension_widgets/mail_widget/mail_widget';
 import { ceilPowerOfTwo } from 'three/src/math/MathUtils.js';
+import { selectOrder, setOrder } from '@/features/shipments/orderSlice';
+import { useSelector, useDispatch } from 'react-redux';
 
 type Package = {
     count: number;
@@ -19,13 +21,21 @@ type Package = {
 }
 
 export const PackageWidget = () => {
+
     const s = useTranslations('standard_sizes');
     const p = useTranslations('placeholders');
+    const order = useSelector(selectOrder)
+    const dispatch = useDispatch()
 
     const [packages, setPackages] = useState<Package[]>([]);
+
     const removePackage = useCallback((index: number) => {
         setPackages((prevPackages) => prevPackages.filter((pkg) => pkg.index !== index));
     },[packages]);
+
+    useEffect(()=>{
+        dispatch(setOrder({ ...order, packages: packages }))
+    },[packages])
 
     return (
         <Flex direction="column" justify="center" align="center">
