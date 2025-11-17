@@ -4,8 +4,16 @@ export const orderSlice = createSlice({
   name: 'order',
   initialState: {
     order: null,
-    sender: null,
-    receiver: null
+    sender: {
+      city:"Bronte (CT)",
+      zip:"95034",
+      country:"Italy"
+    },
+    receiver:  {
+      city:"Milano (MI)",
+      zip:"20147",
+      country:"Italy"
+    },
   },
   reducers: {
     setOrder: (state, action) => {
