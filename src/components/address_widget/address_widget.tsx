@@ -7,6 +7,12 @@ import { mdiCityVariantOutline, mdiHomeMapMarker, mdiMagnify, mdiTicketConfirmat
 type AddressProps = {
     title: string;
     icon: string;
+    address: {
+        city: string,
+        zip: string,
+        country: string
+    };
+    onAddressUpdate: (address:{city:string, zip:string, country:string}) => void
 }
 
 export default function AddressWidget(props: AddressProps) {
@@ -26,7 +32,13 @@ export default function AddressWidget(props: AddressProps) {
                             <span className="capitalize">
                                 {t("city")}
                             </span>
-                            <TextField.Root placeholder={p("city")}>
+                            <TextField.Root placeholder={p("city")} defaultValue={props.address.city}
+                            onChange={(event)=>{
+                                props.onAddressUpdate({
+                                    ...props.address,
+                                    city: event.currentTarget.value
+                                })
+                                }}>
                                 <TextField.Slot>
                                     <Icon path={mdiCityVariantOutline} size={0.5} />
                                 </TextField.Slot>
@@ -36,7 +48,13 @@ export default function AddressWidget(props: AddressProps) {
                             <span className="capitalize">
                                 {t("zip")}
                             </span>
-                            <TextField.Root placeholder={p("zip")}>
+                            <TextField.Root type="number" placeholder={p("zip")} defaultValue={props.address.zip}
+                            onChange={(event)=>{
+                                props.onAddressUpdate({
+                                    ...props.address,
+                                    zip: event.currentTarget.value
+                                })
+                                }}>
                                 <TextField.Slot>
                                     <Icon path={mdiTicketConfirmationOutline} size={0.5} />
                                 </TextField.Slot>
@@ -47,7 +65,13 @@ export default function AddressWidget(props: AddressProps) {
                         <span className="capitalize">
                             {t("country")}
                         </span>
-                        <TextField.Root placeholder={p("country")}>
+                        <TextField.Root placeholder={p("country")} defaultValue={props.address.country}
+                            onChange={(event)=>{
+                                props.onAddressUpdate({
+                                    ...props.address,
+                                    country: event.currentTarget.value
+                                })
+                                }}>
                             <TextField.Slot>
                                 <Icon path={mdiHomeMapMarker} size={0.5} />
                             </TextField.Slot>

@@ -9,6 +9,7 @@ import { MailWidget } from './dimension_widgets/mail_widget/mail_widget';
 import { ceilPowerOfTwo } from 'three/src/math/MathUtils.js';
 import { selectOrder, setOrder } from '@/features/shipments/orderSlice';
 import { useSelector, useDispatch } from 'react-redux';
+import { useRouter } from 'next/navigation';
 
 type Package = {
     count: number;
@@ -26,20 +27,21 @@ export const PackageWidget = () => {
     const p = useTranslations('placeholders');
     const order = useSelector(selectOrder)
     const dispatch = useDispatch()
+    const router = useRouter()
 
     const [packages, setPackages] = useState<Package[]>([]);
 
     const removePackage = useCallback((index: number) => {
         setPackages((prevPackages) => prevPackages.filter((pkg) => pkg.index !== index));
-    },[packages]);
+    }, [packages]);
 
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(setOrder({ ...order, packages: packages }))
-    },[packages])
+    }, [packages])
 
     return (
         <Flex direction="column" justify="center" align="center">
-            <Card style={{paddingBottom:"32px"}}>
+            <Card style={{ paddingBottom: "32px" }}>
                 <Flex direction="column" gap="1" align="start" width="100%">
                     <Flex direction="column" gap="4">
                         <Text as="div" size="2" weight="bold">
@@ -50,19 +52,19 @@ export const PackageWidget = () => {
                                 <Icon path={mdiPackageVariantClosed} size={1} />
                                 <span style={{ padding: "12px 24px" }} onClick={() => {
                                     setPackages([...packages, { count: 1, type: "package", index: packages.length }])
-                                 }}>Pacco</span>
+                                }}>Pacco</span>
                             </Button>
                             <Button>
                                 <Icon path={mdiShippingPallet} size={1} />
                                 <span style={{ padding: "12px 24px" }} onClick={() => {
                                     setPackages([...packages, { count: 1, type: "pallet", index: packages.length }])
-                                 }}>Pallet</span>
+                                }}>Pallet</span>
                             </Button>
                             <Button>
                                 <Icon path={mdiEmailOutline} size={1} />
                                 <span style={{ padding: "12px 24px" }} onClick={() => {
                                     setPackages([...packages, { count: 1, type: "mail", index: packages.length }])
-                                 }}>Busta</span>
+                                }}>Busta</span>
                             </Button>
                         </Flex>
                     </Flex>
@@ -73,15 +75,19 @@ export const PackageWidget = () => {
                         <Flex direction="column" gap="2" maxHeight="150px" overflow="auto">
                             {packages.map((pkg, index) => {
                                 return pkg.type !== 'mail' ?
-                                    <PackageDimensionWidget key={index} id={pkg.index} removePackage={removePackage}/> :
-                                    <MailWidget key={index} id={pkg.index} removePackage={removePackage}/>
+                                    <PackageDimensionWidget key={index} id={pkg.index} removePackage={removePackage} /> :
+                                    <MailWidget key={index} id={pkg.index} removePackage={removePackage} />
                             })}
                         </Flex>
                     </Flex>
                 </Flex>
             </Card>
-            <Button variant='solid' style={{ marginTop: '-16px', zIndex: '3', width: 'fit-content', padding: '24px 32px' }}>
-	            <Text size="6">Compara</Text>
+            <Button variant='solid'
+                onClick={() => {
+                    router.push("/shipping-preferences")
+                }}
+                style={{ marginTop: '-16px', zIndex: '3', width: 'fit-content', padding: '24px 32px' }}>
+                <Text size="6">Compara</Text>
             </Button>
         </Flex>
     )
