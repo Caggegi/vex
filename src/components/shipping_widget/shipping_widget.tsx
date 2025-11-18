@@ -9,32 +9,22 @@ import { mdiHomeOutline, mdiMapMarkerOutline } from "@mdi/js";
 import { useEffect, useRef, useState } from "react";
 import { createTimeline, stagger, text } from 'animejs';
 import { useDispatch, useSelector } from "react-redux";
-import { selectOrder, selectSender, setReceiver, setSender } from "@/features/shipments/orderSlice";
+import { selectOrder, selectReceiver, selectSender, setReceiver, setSender } from "@/features/shipments/orderSlice";
 
 export default function ShippingWidget() {
     const t = useTranslations('others');
     const p = useTranslations('placeholders');
+    const receiver = useSelector(selectReceiver)
+    const sender = useSelector(selectSender)
     const dispatch = useDispatch()
 
     const titleRef = useRef(null);
-    const [sender, setSenderLocal] = useState<{city:string, zip:string, country:string}>({
-        city: "",
-        zip: "",
-        country: ""
-    })
-    const [receiver, setReceiverLocal] = useState<{city:string, zip:string, country:string}>({
-        city: "",
-        zip: "",
-        country: ""
-    })
 
     const handleSenderUpdate = (newSender:{city:string, zip:string, country:string})=>{
-        setSenderLocal(newSender)
         dispatch(setSender(newSender))
     }
     
     const handleReceiverUpdate = (newReceiver:{city:string, zip:string, country:string})=>{
-        setReceiverLocal(newReceiver)
         dispatch(setReceiver(newReceiver))
     }
 

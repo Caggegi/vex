@@ -5,13 +5,13 @@ export const orderSlice = createSlice({
   initialState: {
     order: null,
     sender: {
-      city:"Bronte (CT)",
-      zip:"95034",
+      city:"Roma (RM)",
+      zip:"00100",
       country:"Italy"
     },
     receiver:  {
-      city:"Milano (MI)",
-      zip:"20147",
+      city:"Roma (RM)",
+      zip:"00100",
       country:"Italy"
     },
   },

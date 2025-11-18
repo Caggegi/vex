@@ -1,13 +1,13 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import styles from './package_widget.module.css';
-import { Card, Flex, Text, Button, Select } from '@radix-ui/themes';
+import { Card, Flex, Text, Button, Select, Tooltip } from '@radix-ui/themes';
 import { mdiBagChecked, mdiEmailOutline, mdiPackageVariantClosed, mdiShippingPallet } from '@mdi/js';
 import { useTranslations } from 'next-intl';
 import { Icon } from '@mdi/react';
 import { PackageDimensionWidget } from './dimension_widgets/package_dimension_widget/package_dimension_widget';
 import { MailWidget } from './dimension_widgets/mail_widget/mail_widget';
 import { ceilPowerOfTwo } from 'three/src/math/MathUtils.js';
-import { selectOrder, setOrder } from '@/features/shipments/orderSlice';
+import { selectOrder, selectReceiver, selectSender, setOrder } from '@/features/shipments/orderSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import { useRouter } from 'next/navigation';
 
@@ -26,6 +26,8 @@ export const PackageWidget = () => {
     const s = useTranslations('standard_sizes');
     const p = useTranslations('placeholders');
     const order = useSelector(selectOrder)
+    const sender = useSelector(selectSender)
+    const receiver = useSelector(selectReceiver)
     const dispatch = useDispatch()
     const router = useRouter()
 
@@ -82,13 +84,22 @@ export const PackageWidget = () => {
                     </Flex>
                 </Flex>
             </Card>
-            <Button variant='solid'
-                onClick={() => {
-                    router.push("/shipping-preferences")
-                }}
-                style={{ marginTop: '-16px', zIndex: '3', width: 'fit-content', padding: '24px 32px' }}>
-                <Text size="6">Compara</Text>
-            </Button>
+            <Tooltip content={(!sender.city.length || !sender.zip.length || !sender.country.length ||
+                        !receiver.city.length || !receiver.zip.length || !receiver.country.length ||
+                        !packages.length
+                    )?"Compila tutti i campi per comparare i prezzi":"Compara i prezzi"}>
+                <Button variant='solid'
+                    onClick={() => {
+                        router.push("/shipping-preferences")
+                    }}
+                    disabled={!sender.city.length || !sender.zip.length || !sender.country.length ||
+                        !receiver.city.length || !receiver.zip.length || !receiver.country.length ||
+                        !packages.length
+                    }
+                    style={{ marginTop: '-16px', zIndex: '3', width: 'fit-content', padding: '24px 32px' }}>
+                    <Text size="6">Compara</Text>
+                </Button>
+            </Tooltip>
         </Flex>
     )
 }
